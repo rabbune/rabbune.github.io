@@ -1,8 +1,7 @@
 <!DOCTYPE html>
 <html><center>
 	<head>
-        <link rel="stylesheet" href="style.css">
-
+      
 		<title>Animash Pairing Generator</title>
 	</head>
 	<body>
@@ -11,12 +10,14 @@
 <script src="js/scripts.js"></script>
       
 		<h1>Animash Pairing Generator</h1><br>
-		 <h3><div id="pairingDisplay">
-         <!-- pairings will display here -->
-		</div>
+		 <h3><div id="char1Display">
+         <!-- character 1 displays here --> 
+          </div> <div id="xx" style="display:none;">x</div> <div id="char2Display">
+           <!-- character 2 displays here --></div></h3>
+    
       
-      </h3>
-<br>
+      <br>
+
       <div class="boxes">
     <div class="character1">    
 
@@ -27,15 +28,15 @@
         <input id="femaleOp1" name="femaleOp1" type="checkbox"/>
 <label for="femaleOp1">Female</label><p>
                 <span><b>Ages:</b></span><br>
-        <input id="youngOp2" name="youngOp2" type="checkbox"/>
-<label for="youngOp2">Young</label><br>
-        <input id="adultOp2" name="adultOp2" type="checkbox"/>
-<label for="adultOp2">Adult</label>
+        <input id="youngOp1" name="youngOp1" type="checkbox"/>
+<label for="youngOp1">Young</label><br>
+        <input id="adultOp1" name="adultOp1" type="checkbox"/>
+<label for="adultOp1">Adult</label>
 </fieldset>
-      </div>     
-          <div class="character2">    
-            
-            
+      </div>
+        
+        
+          <div class="character2">
       <fieldset id="characternum2"><legend>Character #2</legend><br>
         <span><b>Genders:</b></span><br>
         <input id="maleOp2" name="maleOp2" type="checkbox"/>
@@ -43,10 +44,10 @@
         <input id="femaleOp2" name="femaleOp2" type="checkbox"/>
 <label for="femaleOp2">Female</label><p>
         <span><b>Ages:</b></span><br>
-        <input id="youngOp1" name="youngOp1" type="checkbox"/>
-<label for="youngOp1">Young</label><br>
-        <input id="adultOp1" name="adultOp1" type="checkbox"/>
-<label for="adultOp1">Adult</label>
+        <input id="youngOp2" name="youngOp2" type="checkbox"/>
+<label for="youngOp2">Young</label><br>
+        <input id="adultOp2" name="adultOp2" type="checkbox"/>
+<label for="adultOp2">Adult</label>
 </fieldset>
 </div>
       </div>
