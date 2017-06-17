@@ -9,15 +9,15 @@ fieldset {
     float: left;
 }
 #characternum1 {
-    width: 50%;
+    width: 40%;
 }
 #characternum2 {
-    width: 50%;
+    width: 40%;
 }
 label {
     float:left;
     font-weight:bold;
 }
 input {
-    width: 100%;
+    width: 40%;
 }
