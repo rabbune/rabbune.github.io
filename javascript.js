@@ -199,4 +199,4 @@ do {
 
 
 } while ( $("#char1Display").text() === $("#char2Display").text() && $("#selfship").is(':checked') === true); 
-}}
+}
