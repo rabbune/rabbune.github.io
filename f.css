@@ -1,0 +1,23 @@
+fieldset, input {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+fieldset {
+    padding: 10px;
+    margin:0;
+    float: left;
+}
+#characternum1 {
+    width: 50%;
+}
+#characternum2 {
+    width: 50%;
+}
+label {
+    float:left;
+    font-weight:bold;
+}
+input {
+    width: 100%;
+}
