@@ -51,8 +51,13 @@ var adultf = characters.filter(function (el) {
 
 var i = 1;
 
-$('#newPairing').click(function() {
-      do {
+document.getElementById("newship").addEventListener("click", newPairing);
+
+
+
+
+function newPairing() {
+
 
  
      document.getElementById('xx').style.display = "inline-block";
@@ -99,13 +104,7 @@ $('#newPairing').click(function() {
                   var randomNumber3 = Math.floor(Math.random() * (characters.length));
                   document.getElementById('char1Display').innerHTML = characters[randomNumber3].name;}
       
-      
-      
-
     }
-  
-  
-  
           else if ($("#femaleOp1").is(':checked') === false && $("#maleOp1").is(':checked') === true) {
             if ($("#youngOp1").is(':checked') === true && $("#adultOp1").is(':checked') === false) {
             var randomNumber4 = Math.floor(Math.random() * (youngm.length));
@@ -116,8 +115,6 @@ $('#newPairing').click(function() {
             else if ($("#youngOp1").is(':checked') === false && $("#adultOp1").is(':checked') === true) {
             var randomNumber7 = Math.floor(Math.random() * (adultm.length));
                   document.getElementById('char1Display').innerHTML = adultm[randomNumber7].name;}}
-          
-              
               
           else if ($("#femaleOp1").is(':checked') === true && $("#maleOp1").is(':checked') === false) {
             if ($("#youngOp1").is(':checked') === true && $("#adultOp1").is(':checked') === false) {
@@ -129,20 +126,6 @@ $('#newPairing').click(function() {
             else if ($("#youngOp1").is(':checked') === false && $("#adultOp1").is(':checked') === true) {
             var randomNumber6 = Math.floor(Math.random() * (adultf.length));
                   document.getElementById('char1Display').innerHTML = adultf[randomNumber6].name;}}
-
-
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
   
     if ($("#femaleOp2").is(':checked') === true && $("#maleOp2").is(':checked') === true) {  
             if ($("#youngOp2").is(':checked') === true && $("#adultOp2").is(':checked') === false) {
@@ -162,13 +145,7 @@ $('#newPairing').click(function() {
                   var randomNumber10 = Math.floor(Math.random() * (characters.length));
                   document.getElementById('char2Display').innerHTML = characters[randomNumber10].name;}
       
-      
-      
-
     }
-  
-  
-  
           else if ($("#femaleOp2").is(':checked') === false && $("#maleOp2").is(':checked') === true) {
             if ($("#youngOp2").is(':checked') === true && $("#adultOp2").is(':checked') === false) {
             var randomNumber11 = Math.floor(Math.random() * (youngm.length));
@@ -193,7 +170,5 @@ $('#newPairing').click(function() {
             var randomNumber14 = Math.floor(Math.random() * (adultf.length));
                   document.getElementById('char2Display').innerHTML = adultf[randomNumber14].name;}}
 
-alert("Please choose age(s) for character #2.");}
- while (i === 1); 
 
-});
+}
