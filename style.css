@@ -14,10 +14,7 @@ fieldset {
 #characternum2 {
     width: 40%;
 }
-label {
-    float:left;
-    font-weight:bold;
-}
+
 input {
     width: 40%;
 }
