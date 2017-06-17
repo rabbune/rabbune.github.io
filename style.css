@@ -17,3 +17,17 @@ fieldset {
 input {
     width: 40%;
 }
+
+
+
+#char1Display {
+    display: inline-block;
+}
+
+#char2Display {
+    display: inline-block;
+}
+
+#xx {
+    display: inline-block;
+}
