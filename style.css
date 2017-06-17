@@ -6,7 +6,6 @@ fieldset, input {
 fieldset {
     padding: 10px;
     margin:0;
-    float: left;
 }
 #characternum1 {
     width: 25%;
