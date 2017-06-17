@@ -1,3 +1,6 @@
+
+
+
 var characters = [
   {name: "Nala", age: "both", gender: "female"}, {name: "Kiara", age: "both", gender: "female"}, {name: "Sarafina", age: "adult", gender: "female"},
   {name: "Sarabi", age: "adult", gender: "female"}, {name: "Vitani", age: "both", gender: "female"}, {name: "Zira", age: "adult", gender: "female"},
@@ -15,6 +18,9 @@ var characters = [
   {name: "Buster", age: "adult", gender: "male"}, {name: "Cash", age: "adult", gender: "male"}, {name: "Tramp", age: "adult", gender: "male"},
   {name: "Francis", age: "adult", gender: "male"}, {name: "Scamp", age: "young", gender: "male"}, {name: "Bagheera", age: "adult", gender: "male"},
   {name: "Oliver", age: "young", gender: "male"}];
+
+
+
 
 var youngchars = characters.filter(function (el) {
     return (el.age === "young" || el.age === "both");     
@@ -45,6 +51,10 @@ var adultf = characters.filter(function (el) {
   
 function newPairing() {
   
+do {
+
+  
+  
      document.getElementById('xx').style.display = "inline-block";
 
    
@@ -68,6 +78,8 @@ function newPairing() {
       
            else if (($("#youngOp1").is(':checked') === true || $("#adultOp1").is(':checked') === true) && ($("#youngOp2").is(':checked') === false && $("#adultOp2").is(':checked') === false)) {
                         alert("Please choose age(s) for character #2.");}
+  
+  
   
   
     if ($("#femaleOp1").is(':checked') === true && $("#maleOp1").is(':checked') === true) {  
@@ -145,6 +157,7 @@ function newPairing() {
                   var randomNumber2 = Math.floor(Math.random() * (adultchars.length));
                   document.getElementById('char2Display').innerHTML = adultchars[randomNumber2].name;}
       
+      
             if ($("#youngOp2").is(':checked') === true && $("#adultOp2").is(':checked') === true) {
                   var randomNumber3 = Math.floor(Math.random() * (characters.length));
                   document.getElementById('char2Display').innerHTML = characters[randomNumber3].name;}
@@ -179,5 +192,11 @@ function newPairing() {
             else if ($("#youngOp2").is(':checked') === false && $("#adultOp2").is(':checked') === true) {
             var randomNumber6 = Math.floor(Math.random() * (adultf.length));
                   document.getElementById('char2Display').innerHTML = adultf[randomNumber6].name;}}
-}
+  
 
+
+  
+
+
+} while ( $("#char1Display").text() === $("#char2Display").text() && $("#selfship").is(':checked') === true); 
+}}
