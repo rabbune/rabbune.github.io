@@ -48,13 +48,13 @@ var adultf = characters.filter(function (el) {
   return (el.gender === "female" && (el.age === "adult" || el.age === "both"));
 });
   
-  
-function newPairing() {
-  
-do {
 
-  
-  
+var i = 1;
+
+$('#newPairing').click(function() {
+      do {
+
+ 
      document.getElementById('xx').style.display = "inline-block";
 
    
@@ -146,21 +146,21 @@ do {
   
     if ($("#femaleOp2").is(':checked') === true && $("#maleOp2").is(':checked') === true) {  
             if ($("#youngOp2").is(':checked') === true && $("#adultOp2").is(':checked') === false) {
-                  var randomNumber = Math.floor(Math.random() * (youngchars.length));
-                if (youngchars[randomNumber].age === "both") {
-                  document.getElementById('char2Display').innerHTML = "Young " + youngchars[randomNumber].name;}
-                else if (youngchars[randomNumber].age === "young") {
-                  document.getElementById('char2Display').innerHTML = youngchars[randomNumber].name;}}
+                  var randomNumber8 = Math.floor(Math.random() * (youngchars.length));
+                if (youngchars[randomNumber8].age === "both") {
+                  document.getElementById('char2Display').innerHTML = "Young " + youngchars[randomNumber8].name;}
+                else if (youngchars[randomNumber8].age === "young") {
+                  document.getElementById('char2Display').innerHTML = youngchars[randomNumber8].name;}}
       
       /*  */
             if ($("#youngOp2").is(':checked') === false && $("#adultOp2").is(':checked') === true) {
-                  var randomNumber2 = Math.floor(Math.random() * (adultchars.length));
-                  document.getElementById('char2Display').innerHTML = adultchars[randomNumber2].name;}
+                  var randomNumber9 = Math.floor(Math.random() * (adultchars.length));
+                  document.getElementById('char2Display').innerHTML = adultchars[randomNumber9].name;}
       
       
             if ($("#youngOp2").is(':checked') === true && $("#adultOp2").is(':checked') === true) {
-                  var randomNumber3 = Math.floor(Math.random() * (characters.length));
-                  document.getElementById('char2Display').innerHTML = characters[randomNumber3].name;}
+                  var randomNumber10 = Math.floor(Math.random() * (characters.length));
+                  document.getElementById('char2Display').innerHTML = characters[randomNumber10].name;}
       
       
       
@@ -171,33 +171,29 @@ do {
   
           else if ($("#femaleOp2").is(':checked') === false && $("#maleOp2").is(':checked') === true) {
             if ($("#youngOp2").is(':checked') === true && $("#adultOp2").is(':checked') === false) {
-            var randomNumber4 = Math.floor(Math.random() * (youngm.length));
-                if (youngm[randomNumber4].age === "both") {
-                  document.getElementById('char2Display').innerHTML = "Young " + youngm[randomNumber4].name;}
-                else if (youngm[randomNumber4].age === "young") {
-                  document.getElementById('char2Display').innerHTML = youngm[randomNumber4].name;}}
+            var randomNumber11 = Math.floor(Math.random() * (youngm.length));
+                if (youngm[randomNumber11].age === "both") {
+                  document.getElementById('char2Display').innerHTML = "Young " + youngm[randomNumber11].name;}
+                else if (youngm[randomNumber11].age === "young") {
+                  document.getElementById('char2Display').innerHTML = youngm[randomNumber11].name;}}
             else if ($("#youngOp2").is(':checked') === false && $("#adultOp2").is(':checked') === true) {
-            var randomNumber7 = Math.floor(Math.random() * (adultm.length));
-                  document.getElementById('char2Display').innerHTML = adultm[randomNumber7].name;}}
+            var randomNumber12 = Math.floor(Math.random() * (adultm.length));
+                  document.getElementById('char2Display').innerHTML = adultm[randomNumber12].name;}}
           
               
               
           else if ($("#femaleOp2").is(':checked') === true && $("#maleOp2").is(':checked') === false) {
             if ($("#youngOp2").is(':checked') === true && $("#adultOp2").is(':checked') === false) {
-            var randomNumber5 = Math.floor(Math.random() * (youngf.length));
-                if (youngf[randomNumber5].age === "both") {
-                  document.getElementById('char2Display').innerHTML = "Young " + youngf[randomNumber5].name;}
-                else if (youngf[randomNumber5].age === "young") {
-                  document.getElementById('char2Display').innerHTML = youngf[randomNumber5].name;}}
+            var randomNumber13 = Math.floor(Math.random() * (youngf.length));
+                if (youngf[randomNumber13].age === "both") {
+                  document.getElementById('char2Display').innerHTML = "Young " + youngf[randomNumber13].name;}
+                else if (youngf[randomNumber13].age === "young") {
+                  document.getElementById('char2Display').innerHTML = youngf[randomNumber13].name;}}
             else if ($("#youngOp2").is(':checked') === false && $("#adultOp2").is(':checked') === true) {
-            var randomNumber6 = Math.floor(Math.random() * (adultf.length));
-                  document.getElementById('char2Display').innerHTML = adultf[randomNumber6].name;}}
-  
+            var randomNumber14 = Math.floor(Math.random() * (adultf.length));
+                  document.getElementById('char2Display').innerHTML = adultf[randomNumber14].name;}}
 
+alert("Please choose age(s) for character #2.");}
+ while (i === 1); 
 
-  
-
-
-} while ( $("#char1Display").text() === $("#char2Display").text() && $("#selfship").is(':checked') === true); 
-}
-}
+});
